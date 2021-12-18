@@ -8,10 +8,16 @@ class Tutoirial < Gosu::Window
 	end
 
 	def update
+		@background_image = Gosu::Image.new("images/space.png", :tileable => true)
 	end
 
 	def draw
+		@background_image.draw(0, 0, 0)
 	end
+
+end
+
+class Player
 
 end
 
